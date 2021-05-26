@@ -30,14 +30,14 @@ services:
       - app-network
   client:
     build:
-      context: ./react_client
+      context: ./client
       dockerfile: Dockerfile
     image: react-client
     container_name: myapp-react-client
     command: npm start
-    env_file: ./react_client/.env
+    env_file: ./client/.env
     volumes:
-      - ./react_client/:/usr/app
+      - ./client/:/usr/app
       - /usr/app/node_modules
     depends_on:
       - server
