@@ -1,0 +1,30 @@
+.actions-block {
+    margin-top: 25px;
+}
+
+.healthbar {
+    line-height: 2.5;
+    border-radius: 5px;
+}
+
+.healthbar.red {
+    background-color: #f35757;
+}
+
+.healthbar .actions {
+    display: inherit;
+}
+
+.start-game, .actions #btn {
+    border-radius: 10px;
+    border: 0px;
+}
+
+.commentary-box {
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.list-group-item {
+    padding: 0px;
+}
