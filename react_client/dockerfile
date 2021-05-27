@@ -1,0 +1,19 @@
+#  Dockerfile for Node Express Backend
+
+FROM node:14-slim
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install --silent
+
+# Copy app source code
+COPY . .
+
+ENV REACT_APP_BASE_URL=http://localhost:8081/api
+
+# Exports
+EXPOSE 3000
+
+CMD ["npm","start"]

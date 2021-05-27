@@ -31,8 +31,9 @@ $ npm i
 ## project structure
 ```terminal
 LICENSE
-package.json
-.env (to create .env, check [prepare your secret session])
+server/
+   package.json
+   .env (to create .env, check [prepare your secret session])
 react_client/
    package.json
 ...
@@ -74,7 +75,7 @@ $ echo "SECRET=YOUR_JWT_SECRET" >> ./server/src/.env
 ### Start
 
 ```terminal
-$ cd ./   // go to server folder
+$ cd ./server   // go to server folder
 $ npm i       // npm install pacakges
 $ node app.js // run it locally
 ```
